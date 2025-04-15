@@ -1,15 +1,8 @@
-import { Movie } from "@/types/movie";
+import { getMovies } from "@/services/api";
 import { Carousel } from "./Carousel";
 
-async function getFeaturedMovies(): Promise<Movie[]> {
-  const response = await fetch(`${process.env.API_URL}/movies?limit=3`);
-
-  const data = await response.json();
-  return data.data;
-}
-
 export async function CarouselWrapper() {
-  const initialMovies = await getFeaturedMovies();
+  const { data } = await getMovies(1, 3);
 
-  return <Carousel initialMovies={initialMovies} />;
+  return <Carousel initialMovies={data} />;
 }
