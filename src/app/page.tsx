@@ -1,11 +1,21 @@
-import { Header } from "@/components/Header";
-import { CarouselWrapper } from "@/components/CarouselWrapper";
+import { Header } from '@/components/Header';
+import { CarouselWrapper } from '@/components/CarouselWrapper';
+import { MoviesList } from '@/components/MoviesList';
 
-export default async function Home() {
+interface HomeProps {
+  searchParams: {
+    page?: string;
+  };
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const currentPage = searchParams?.page ? parseInt(searchParams.page) : 1;
+
   return (
-    <main className="w-full h-screen">
+    <main>
       <Header />
       <CarouselWrapper />
+      <MoviesList page={Math.max(1, currentPage)} />
     </main>
   );
 }
