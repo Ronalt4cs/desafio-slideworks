@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Desafio Slideworks
 
-First, run the development server:
+Desafio técnico para empresa slideworks que consiste em recriar um design com reactjs ou nextjs consumindo uma API de filmes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Feedback
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Optei por usar Next.js na construção da aplicação, pois ele já fornece tudo o que é necessário desde a instalação e garante um facilidade extra  para o deploy. Com isso, consegui otimizar ao máximo o tempo possível. Também evitei instalar outras bibliotecas além das do framework, como componentes prontos, ícones ou bibliotecas para requisições de API. Utilizei o Next.js puro e o Tailwind CSS para estilização como um desafio pessoal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A documentação do Next.js e do Tailwind foram minhas principais fontes de consulta durante todo o projeto. Meu maior desafio foi a estilização dos botões de paginação dos filmes, que exigiu uma pesquisa adicional com ajuda de IAs para alcançar o resultado desejado. Esse desafio me surpreendeu positivamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+No entanto, senti falta da implementação de um backend. Talvez a adição de um sistema simples de login para autenticação de usuários fosse interessante para futuros desafios da empresa, já que testaria o candidato em aspectos como manipulação de dados, testes, rotas protegidas e muitos outros fatores relevantes.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Deploy
+* https://lista-filme-two.vercel.app/
