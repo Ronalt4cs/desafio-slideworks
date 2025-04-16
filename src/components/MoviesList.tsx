@@ -13,7 +13,7 @@ export async function MoviesList({ page = 1 }: MovieListProps) {
     <div className="flex flex-col items-center py-16">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
         {movies.map((movie) => (
-          <div key={movie.title} className="w-72 h-[602px] px-4 py-4 flex flex-col items-center justify-between gap-4 border border-gray-200 rounded-2xl">
+          <div key={movie.title} className="w-72 h-[602px] px-4 py-4 flex flex-col items-center justify-between gap-4 border border-gray-200 rounded-2xl hover:opacity-75 transition transform hover:-translate-0.5">
             <Image
               src={movie.image_url}
               alt={movie.title}
