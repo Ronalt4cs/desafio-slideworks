@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="w-full h-72 flex items-center px-28 bg-[#726BEA]">
-      <div className="container flex flex-col gap-12">
+    <footer className="w-full h-72 flex items-center justify-center px-28 bg-[#726BEA]">
+      <div className="container flex flex-col gap-12 max-md:items-center max-md:w-auto">
         <Image src="/logo-white.svg" width={176} height={33} alt="white logo image" />
         <div className="w-full h-0.5 bg-amber-100" />
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-md:flex-col max-md:gap-8">
           <div className="flex gap-8 font-normal text-sm leading-none tracking-tight text-white">
             <a href="https://www.google.com" target="_blank">Terms&Conditions</a>
             <a href="https://www.google.com" target="_blank">Privacy Policy</a>
